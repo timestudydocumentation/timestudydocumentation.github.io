@@ -1,11 +1,5 @@
-.. image:: /images/logo_icon.png
-   :align: center
-
-
-TIME study documentation
+Entrance to this documentation
 =======================================
-
-
 
 .. note::
 
@@ -17,7 +11,7 @@ The **Temporal Influences on Movement and Exercise (TIME) Study** uses mobile an
 
 Feedback
 --------
-We welcome feedback from researchers. Please let us know if you have questions about the study, dataset, or suggestions regarding the codebooks. The best way to give us feedback is to open an issue on our Github site.
+We welcome feedback from researchers. Please let us know if you have questions about the study, dataset, or suggestions regarding the codebooks. The best way to give us feedback is to open an issue for us on our Github site.
 
 Contents
 --------
@@ -25,6 +19,7 @@ Contents
 .. toctree::
    :maxdepth: 1
 
+   entrance
    study_overview
    data_pipeline
    publications

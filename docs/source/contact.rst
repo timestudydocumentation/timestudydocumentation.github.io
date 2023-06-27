@@ -1,4 +1,4 @@
-People
+Contact Us
 ==================================
 
 Principal Investigator and Team
