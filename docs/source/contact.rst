@@ -1,7 +1,7 @@
 Funding and Team
 ==================================
   
-Principal Investigator and Team
+Funding
 -----------------------------------
 Agency: National Institutes of Health (NIH)  
 Institutes: National Heart, Lung, and Blood Institute (NHLBI)  
