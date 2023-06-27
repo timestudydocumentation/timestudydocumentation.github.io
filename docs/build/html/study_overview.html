@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Data description and codebook" href="data_pipeline.html" /><link rel="prev" title="Feedback" href="index.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Data description and codebook" href="data_pipeline.html" /><link rel="prev" title="TIME study documentation" href="index.html" />
 
     <meta name="generator" content="sphinx-5.2.2, furo 2022.09.15"/>
         <title>Overview of the study - TIME study documentation</title>
@@ -157,8 +157,9 @@
   <ul class="current">
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Overview of the study</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_pipeline.html">Data description and codebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_access.html">How can I access the data and codebooks?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="publications.html">Publications</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Funding and Team</a></li>
 <li class="toctree-l1"><a class="reference internal" href="host_site.html">About this website</a></li>
 </ul>
 
@@ -220,9 +221,10 @@
 </ul>
 </li>
 </ul>
+<a class="reference internal image-reference" href="_images/ema_schedule.png"><img alt="_images/ema_schedule.png" src="_images/ema_schedule.png" style="width: 800px;" /></a>
 </section>
-<section id="online-questionnaire-measures">
-<h2>Online Questionnaire Measures<a class="headerlink" href="#online-questionnaire-measures" title="Permalink to this heading">#</a></h2>
+<section id="online-questionnaire-measures-link">
+<h2>Online Questionnaire Measures (<a class="reference external" href="https://drive.google.com/drive/folders/15bYjpBKKcTL8_Dil6TWKjLOld7tXTWdN?usp=sharing">Link</a>.)<a class="headerlink" href="#online-questionnaire-measures-link" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>General Health Questions</p></li>
 <li><p>Physical Activity (IPAQ)</p></li>
@@ -264,11 +266,14 @@
 <li><p>Intentions (PA, SB, Sleep)</p></li>
 </ul>
 </section>
-<section id="ema-measures-on-mobile-devices">
-<h2>EMA Measures on Mobile Devices<a class="headerlink" href="#ema-measures-on-mobile-devices" title="Permalink to this heading">#</a></h2>
+<section id="ema-measures-on-smartphones">
+<h2>EMA Measures on Smartphones<a class="headerlink" href="#ema-measures-on-smartphones" title="Permalink to this heading">#</a></h2>
 <p>Find detailed item description <a class="reference external" href="https://docs.google.com/document/d/1XQEkHa7GiSVnc8vuuiiKmHqnqYE_6eqA/edit?usp=share_link&amp;ouid=114892255827597694084&amp;rtpof=true&amp;sd=true">here</a>.</p>
 <a class="reference internal image-reference" href="_images/measurements.png"><img alt="_images/measurements.png" src="_images/measurements.png" style="width: 600px;" /></a>
-<a class="reference internal image-reference" href="_images/ema_schedule.png"><img alt="_images/ema_schedule.png" src="_images/ema_schedule.png" style="width: 800px;" /></a>
+</section>
+<section id="uema-measures-on-smartwatches">
+<h2>uEMA Measures on Smartwatches<a class="headerlink" href="#uema-measures-on-smartwatches" title="Permalink to this heading">#</a></h2>
+<p>Find detailed item description <a class="reference external" href="https://docs.google.com/spreadsheets/d/1w-N5VnW1CMXB_lcUMMave8xbCPJHS8DsOpl74b5YMCo/[…]AAJvpVYpc&amp;ts=5f033aec&amp;usp=comment_email_document&amp;usp_dm=false">here</a>.</p>
 </section>
 <section id="passive-sensing-on-mobile-devices">
 <h2>Passive Sensing on Mobile Devices<a class="headerlink" href="#passive-sensing-on-mobile-devices" title="Permalink to this heading">#</a></h2>
@@ -282,13 +287,13 @@
 <p><strong>Physical activity and location</strong></p>
 <p>All motion summary measurements were computed based on accelerometer data from smartwatches. Location data were collected through Android API on the smartphones.</p>
 <ul class="simple">
-<li><p>MIMS (Monitor Independent Movement Summary unit): a type of measurement of motion summary that features harmonizing the processing of accelerometer data from different devices</p></li>
-<li><p>AUC (area under curve): a type of measurement of area under the rectified curve of the raw accelerometer signal</p></li>
+<li><p>Watch MIMS (Monitor Independent Movement Summary unit): a type of measurement of motion summary that features harmonizing the processing of accelerometer data from different devices</p></li>
+<li><p>AUC (area under curve) of watch accelerometer data: a type of measurement of area under the rectified curve of the raw accelerometer signal</p></li>
 <li><p>SWaN (v1.0): an algorithm to distinguish between sleep-wear, wake-wear, and non-wear of smartwatch</p></li>
-<li><p>Phone detected activity: detection of activity and confidence levels using Android Activity Recognition API, including in vehicle, on bike, on foot, running, still, tilting, walking and unknown</p></li>
-<li><p>Step count: steps of the last hour returned from Android API</p></li>
-<li><p>Location: latitude, longitude returned from Android API</p></li>
-<li><p>Location cluster semantic labels: semantic labels collected from self-reported surveys and OpenStreetMap databases on the location clusters detected by density-based clustering algorithm</p></li>
+<li><p>Phone detected activity type: detection of activity and confidence levels using Android Activity Recognition API, including in vehicle, on bike, on foot, running, still, tilting, walking and unknown</p></li>
+<li><p>Phone step count: steps of the last hour returned from Android API</p></li>
+<li><p>Phone location: latitude, longitude returned from Android API</p></li>
+<li><p>Semantic labels of phone location clusters: semantic labels collected from self-reported surveys and OpenStreetMap databases on the phone location clusters detected by density-based clustering algorithm</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/ps_activity.png"><img alt="_images/ps_activity.png" src="_images/ps_activity.png" style="width: 600px;" /></a>
 <p><strong>Smartphone state and usage</strong></p>
@@ -371,8 +376,9 @@
 <li><a class="reference internal" href="#">Overview of the study</a><ul>
 <li><a class="reference internal" href="#participant-recruitment">Participant Recruitment</a></li>
 <li><a class="reference internal" href="#study-design">Study design</a></li>
-<li><a class="reference internal" href="#online-questionnaire-measures">Online Questionnaire Measures</a></li>
-<li><a class="reference internal" href="#ema-measures-on-mobile-devices">EMA Measures on Mobile Devices</a></li>
+<li><a class="reference internal" href="#online-questionnaire-measures-link">Online Questionnaire Measures (Link.)</a></li>
+<li><a class="reference internal" href="#ema-measures-on-smartphones">EMA Measures on Smartphones</a></li>
+<li><a class="reference internal" href="#uema-measures-on-smartwatches">uEMA Measures on Smartwatches</a></li>
 <li><a class="reference internal" href="#passive-sensing-on-mobile-devices">Passive Sensing on Mobile Devices</a></li>
 </ul>
 </li>

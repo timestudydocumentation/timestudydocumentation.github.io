@@ -31,7 +31,10 @@ Up to 12 months of data collection via online questionnaires, EMA&uEMA, and pass
   - Location, social context, posture/ambulation, watch wear/non-wear, sleep duration
 
 
-Online Questionnaire Measures
+.. image:: /images/ema_schedule.png
+  :width: 800
+
+Online Questionnaire Measures (`Link <https://drive.google.com/drive/folders/15bYjpBKKcTL8_Dil6TWKjLOld7tXTWdN?usp=sharing>`_.)
 -----------------------------
 
 - General Health Questions
@@ -110,15 +113,18 @@ Online Questionnaire Measures
 
 - Intentions (PA, SB, Sleep)
 
-EMA Measures on Mobile Devices
+EMA Measures on Smartphones
 ------------------------------
 Find detailed item description `here <https://docs.google.com/document/d/1XQEkHa7GiSVnc8vuuiiKmHqnqYE_6eqA/edit?usp=share_link&ouid=114892255827597694084&rtpof=true&sd=true>`_.
 
 .. image:: /images/measurements.png
   :width: 600
 
-.. image:: /images/ema_schedule.png
-  :width: 800
+
+uEMA Measures on Smartwatches
+------------------------------
+Find detailed item description `here <https://docs.google.com/spreadsheets/d/1w-N5VnW1CMXB_lcUMMave8xbCPJHS8DsOpl74b5YMCo/[…]AAJvpVYpc&ts=5f033aec&usp=comment_email_document&usp_dm=false>`_.
+  
 
 Passive Sensing on Mobile Devices
 ----------------------------------------------
@@ -136,19 +142,19 @@ Passive sensing data were collected continuously from user's own **Android smart
 
 All motion summary measurements were computed based on accelerometer data from smartwatches. Location data were collected through Android API on the smartphones.
 
-- MIMS (Monitor Independent Movement Summary unit): a type of measurement of motion summary that features harmonizing the processing of accelerometer data from different devices
+- Watch MIMS (Monitor Independent Movement Summary unit): a type of measurement of motion summary that features harmonizing the processing of accelerometer data from different devices
 
-- AUC (area under curve): a type of measurement of area under the rectified curve of the raw accelerometer signal
+- AUC (area under curve) of watch accelerometer data: a type of measurement of area under the rectified curve of the raw accelerometer signal
 
 - SWaN (v1.0): an algorithm to distinguish between sleep-wear, wake-wear, and non-wear of smartwatch
 
-- Phone detected activity: detection of activity and confidence levels using Android Activity Recognition API, including in vehicle, on bike, on foot, running, still, tilting, walking and unknown
+- Phone detected activity type: detection of activity and confidence levels using Android Activity Recognition API, including in vehicle, on bike, on foot, running, still, tilting, walking and unknown
 
-- Step count: steps of the last hour returned from Android API
+- Phone step count: steps of the last hour returned from Android API
 
-- Location: latitude, longitude returned from Android API
+- Phone location: latitude, longitude returned from Android API
 
-- Location cluster semantic labels: semantic labels collected from self-reported surveys and OpenStreetMap databases on the location clusters detected by density-based clustering algorithm
+- Semantic labels of phone location clusters: semantic labels collected from self-reported surveys and OpenStreetMap databases on the phone location clusters detected by density-based clustering algorithm
 
 .. image:: /images/ps_activity.png
   :width: 600

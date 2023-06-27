@@ -2,9 +2,12 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="#" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Publications" href="publications.html" /><link rel="prev" title="Data description and codebook" href="data_pipeline.html" />
 
-    <meta name="generator" content="sphinx-5.2.2, furo 2022.09.15"/><title>Search - TIME study  documentation</title><link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <meta name="generator" content="sphinx-5.2.2, furo 2022.09.15"/>
+        <title>How can I access the data and codebooks? - TIME study documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=9ec31e2665bf879c1d47d93a8ec4893870ee1e45" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -145,16 +148,16 @@
   
   <span class="sidebar-brand-text">TIME study  documentation</span>
   
-</a><form class="sidebar-search-container" method="get" action="#" role="search">
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <ul>
+  <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="study_overview.html">Overview of the study</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_pipeline.html">Data description and codebook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_access.html">How can I access the data and codebooks?</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">How can I access the data and codebooks?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="publications.html">Publications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">Funding and Team</a></li>
 <li class="toctree-l1"><a class="reference internal" href="host_site.html">About this website</a></li>
@@ -191,25 +194,53 @@
           </label>
         </div>
         <article role="main">
-          
-<noscript>
-<div class="admonition error">
-  <p class="admonition-title">Error</p>
-  <p>
-    Please activate JavaScript to enable the search functionality.
-  </p>
-</div>
-</noscript>
-
-<div id="search-results"></div>
+          <section id="how-can-i-access-the-data-and-codebooks">
+<h1>How can I access the data and codebooks?<a class="headerlink" href="#how-can-i-access-the-data-and-codebooks" title="Permalink to this heading">#</a></h1>
+<p>The rich data collected in TIME study are processed and stored at different levels to serve different purposes and researchers with various programming backgrounds. They include data and logs in original form that preserves maximal information, intermediate data that are processed with modest manners to have a cleaner format, pre-processed data that have a refined format and can be directly imported into statistical softwares, and project-specific data that are generated for project-specific purposes. Details about these datasets can be found in their codebooks.</p>
+<img alt="_images/flowcharts.png" src="_images/flowcharts.png" />
+<p><strong>Raw data and logs (recommended for experienced programmer)</strong></p>
+<p><em>Description</em>: all data and logs are encrypted and stored in their raw format after being directly pulled from devices. It contains all kinds of logs including those used for debugging purposes. Most files have data format issues, such as missing headers, duplicate rows, logging errors, etc.</p>
+<p><em>Location</em>: discovery cluster</p>
+<p><em>Codebook</em>: <a class="reference external" href="https://docs.google.com/document/d/1P_EFLPf1ovy7Q1KxJqeJcsvjVorTU3F5/edit?usp=sharing&amp;ouid=114892255827597694084&amp;rtpof=true&amp;sd=true">Link</a></p>
+<p><strong>Intermediate data (recommended for experienced programmer)</strong></p>
+<p><em>Description</em>: data and logs are extracted from the raw data and logs and cleaned to be free of format issues as in raw data format. Every file is stored in csv format with a header. Researchers with strong programming skills can start analysis with data at this stage. See more details about data processing of first, second, and third passes on discovery cluster <a class="reference external" href="https://docs.google.com/presentation/d/16MweNpNtCRuGesIusS8MOqcHZurvukfOXVf_9RZ9iCU/edit?usp=sharing">here</a>.</p>
+<p><em>Location</em>: discovery cluster</p>
+<p><em>Codebook</em>: <a class="reference external" href="https://docs.google.com/document/d/1ICuqKXCl5JkM5RjU1WNQs4hphxWwTz-E/edit?usp=sharing&amp;ouid=114892255827597694084&amp;rtpof=true&amp;sd=true">Link</a></p>
+<p><strong>Daily report</strong></p>
+<p><em>Description</em>: a single csv file that contains an aggregated summary of statistics for each day and participant. Files are at day level for each participant, and stored in /participantID/YYYY-MM-DD/. This file was originally used for compliance check during the study.</p>
+<p><em>Location</em>: discovery cluster</p>
+<p><em>Codebook</em>: <a class="reference external" href="https://docs.google.com/document/d/1LqaMriSpHDn5IUJGW9jtkihuh8c13KEB/edit?usp=sharing&amp;ouid=114892255827597694084&amp;rtpof=true&amp;sd=true">Link</a></p>
+<p><strong>EMA dataset</strong></p>
+<p><em>Description</em>: a single csv file of all prompted EMA surveys and responses, including EMA Measurement Burst Data, EMA Daily Data, and EMA Weekly (i.e., Sunday) Data (with the COVID questionnaire).</p>
+<p><em>Location</em>: discovery cluster</p>
+<p><em>Codebook</em>: <a class="reference external" href="https://docs.google.com/document/d/1DmodI_b594y1nCcI2dhTgissmKp9Ddf_hD6PUkiZFng/edit?usp=sharing">Link</a></p>
+</section>
 
         </article>
       </div>
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="publications.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Publications</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="data_pipeline.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Data description and codebook</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -243,8 +274,5 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/scripts/furo.js"></script>
-    
-<script src="_static/searchtools.js"></script>
-<script src="_static/language_data.js"></script>
-<script src="searchindex.js"></script></body>
+    </body>
 </html>
