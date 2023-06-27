@@ -27,6 +27,7 @@ Contents
 
    study_overview
    data_pipeline
+   data_access
    publications
    contact
    host_site

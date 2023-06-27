@@ -1,5 +1,20 @@
-Contact Us
+Funding and Team
 ==================================
+  
+Principal Investigator and Team
+-----------------------------------
+Agency: National Institutes of Health (NIH)  
+Institutes: National Heart, Lung, and Blood Institute (NHLBI)  
+
+Grant Number: 3U01HL146327-04S2  
+
+Principal Investigator(s): Dunton, Genevieve Fridlund (University of Southern California); Intille, Stephen (Northeastern University)  
+
+Research Groups: REACH Lab, University of Southern California and mHealth Research Group, Northeastern University  
+  
+NIH report: `Microtemporal Processes Underlying Health Behavior Adoption and Maintenance <https://reporter.nih.gov/project-details/10559464>`_
+
+  
 
 Principal Investigator and Team
 -----------------------------------
