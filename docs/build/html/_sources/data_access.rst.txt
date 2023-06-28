@@ -35,4 +35,6 @@ The rich data collected in TIME study are processed and stored at different leve
 
 *Location*: discovery cluster
 
+*R code and instruction*: `Link <https://docs.google.com/document/d/13EoBgT_0VB44rKQFtlAsggnM2fLqUag061D9LTSnE04/edit?usp=sharing>`_
+
 *Codebook*: `Link <https://docs.google.com/document/d/1DmodI_b594y1nCcI2dhTgissmKp9Ddf_hD6PUkiZFng/edit?usp=sharing>`_
