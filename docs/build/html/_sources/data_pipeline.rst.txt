@@ -5,6 +5,14 @@ The rich data collected in TIME study are processed and stored at different leve
 
 .. image:: /images/flowcharts.png
 
+**Baseline, 6-month, and 12-month online questionnaires**
+
+*Description*: Sociodemographic variables, mental health characteristics, health status, health behaviors, and other covariates are assessed at three time points (baseline, 6 months, 12 months) using online electronic questionnaires completed remotely on a computer, tablet, or smartphone. The surveys were administered through USC’s REDCap system. 
+
+*Location*: REDCap system
+
+*Codebook*: `Link <https://docs.google.com/document/d/141SUkhgxjFvOxgMI8WeZ6W0PfGbvQeFm/edit?usp=sharing&ouid=114892255827597694084&rtpof=true&sd=true>`_
+
 **Raw data and logs (recommended for experienced programmer)**
 
 *Description*: all data and logs are encrypted and stored in their raw format after being directly pulled from devices. It contains all kinds of logs including those used for debugging purposes. Most files have data format issues, such as missing headers, duplicate rows, logging errors, etc.
