@@ -2,40 +2,43 @@ Overview of the study
 =========================
 .. _publications:
 
-The **Temporal Influences on Movement and Exercise (TIME) Study** uses mobile and wearable technologies to measure moment-to-moment experiences that shape our health behaviors and decision making. The goal is to study how different contextual and situational factors explain the adoption and maintenance of health behaviors. We are using a combination of phone-based experience sampling, wearable-based micro-EMA, and passive sensing to build predictive models of health behavior at the individual and group levels. We conducted a within-subject case-crossover observational study across a 12-month period among ethnically-diverse, emerging adults (ages 18-29). Interested researchers are suggested to read the two :ref:`protocol paper <publications>` to find more details about the study.
+The **Temporal Influences on Movement and Exercise (TIME) Study** used mobile and wearable technologies to measure moment-to-moment experiences that shape our health behaviors and decision making. The goal was to use the data we collected to study how different contextual and situational factors explain the adoption and maintenance of health behaviors, such as physical activity, reduced sitting time, and sleep. The study data collection included using a combination of phone-based ecological momentary assessment (EMA), wearable-based micro-EMA (uEMA), and passive sensing to build predictive models of health behavior at the individual and group levels. The study used a within-subject case-crossover observational design run with ethnically-diverse emerging adults (ages 18-29), each for up to a 12-month period. Interested researchers are suggested to read the two `protocol paper <https://timestudydocumentation.github.io/docs/build/html/publications.html>`_ to  find more details about the study.
 
-Participant Recruitment
+Participant
 ------------------------
-N=250 young adults (18-29) with personal Android smartphone who engage in recommended levels of physical activity (PA) or intend to within the next 12 months.
+Participants included N=250 young adults (18-29 years) with personal Android smartphones who engaged in recommended levels of physical activity (PA) (> 150 min/week) or intended to start doing so within the next 12 months.
 
 Study design
 ------------
-Up to 12 months of data collection via online questionnaires, EMA&uEMA, and passive sensing on smartwatch and smartphone
+Up to 12 months of data were collected via online questionnaires, EMA & uEMA, and passive sensing on smartwatches and smartphones. Specific measures included:
 
 - Online questionnaires at baseline, 6 months, and 12 months into the study
 
 - Continuous smartwatch wear (~23 hours/day every day including during sleep)
 
-- Signal Contingent EMA questions on smartphone and smartwatch
+- Interval-contingent (i.e., time-based) EMA questions on the smartphone
 
-  - Phone End of day EMA survey (1-2 min) -> every night delivered 3 hours before self-reported sleep time
+  - Smartphone-based end of day EMA survey (lasting 1-2 min) -> every night delivered 3 hours before self-reported sleep time
 
-  - Phone Burst survey (1-2 min) -> 4-day smartphone survey bursts twice a month at least 7 days apart. Each burst period consists of 2 weekends and 2 weekdays. Survey is delivered once an hour during participant’s self-reported waking hours.
+  - Smartphone-based wake/sleep survey (lasting 1 min)-> every 6-8 hours to confirm or establish previous/next sleep/wake time
 
-  - Phone Wake/Sleep survey (1 min)-> every 6-8 hours to confirm or establish previous/next sleep/wake time
+- Signal-contingent (i.e., randomly-prompted) EMA questions on the smartphone and smartwatch
 
-  - Smartwatch survey (2-4 seconds) -> single questions that mirror EMA measures, validate sensor measurements, or test data validity. Up to 6 an hour during self-reported waking hours.
+  - Smartphone burst survey (1-2 min) -> 4-day burst periods occurred twice a month at least 7 days apart. Each burst period consisted of 2 weekend days and 2 weekdays. Surveys were delivered once per hour during participant’s self-reported waking hours.
 
-- Context-Sensitive EMA (contingent on events/exposures detected by built-in smartphone/smartwatch sensors) to improve utility of sensor data
+  - Smartwatch uEMA survey (lasting 2-4 seconds) -> single questions that mirrored EMA measures, validated sensor measurements, or tested data validity. Up to 6 per hour during self-reported waking hours.
 
-  - Location, social context, posture/ambulation, watch wear/non-wear, sleep duration
+- Context-sensitive EMA (i.e., contingent on events/exposures detected by built-in smartphone sensors) to improve utility of sensor data
+
+  - Smartphone location survey (2-4 seconds) -> single question survey asking participants to semantically annotate (e.g., home, work, restaurant, library) their current locations were delivered when participants revisited staypoints (stayed for 3 minutes or more) 
 
 
 .. image:: /images/ema_schedule.png
   :width: 800
 
-Online Questionnaire Measures (`Link <https://drive.google.com/drive/folders/15bYjpBKKcTL8_Dil6TWKjLOld7tXTWdN?usp=sharing>`_.)
+Online Questionnaire Measures
 -----------------------------
+Find detailed item description `here <https://drive.google.com/drive/folders/15bYjpBKKcTL8_Dil6TWKjLOld7tXTWdN?usp=sharing>`_.  
 
 - General Health Questions
 
@@ -123,38 +126,44 @@ Find detailed item description `here <https://docs.google.com/document/d/1XQEkHa
 
 uEMA Measures on Smartwatches
 ------------------------------
-Find detailed item description `here <https://docs.google.com/spreadsheets/d/1w-N5VnW1CMXB_lcUMMave8xbCPJHS8DsOpl74b5YMCo/[…]AAJvpVYpc&ts=5f033aec&usp=comment_email_document&usp_dm=false>`_.
+
+.. image:: /images/uEMA.png
+  :width: 600
+
+μEMA questions are prompted 4 times an hour at random, with at least eight minutes guaranteed between 2 consecutive prompts using the following formula. The uEMA measures mirrored EMA measures but in a shorter form. For example, the question is "Feeling stressed today?" and the answer options are "Yes", "Sort of", or "No". Full details about uEMA prompt scheduling can be found in the protocol paper. 
+
+Find detailed item description `here <https://docs.google.com/spreadsheets/d/1w-N5VnW1CMXB_lcUMMave8xbCPJHS8DsOpl74b5YMCo/edit?usp=sharing>`_.
   
 
 Passive Sensing on Mobile Devices
 ----------------------------------------------
-Passive sensing data were collected continuously from user's own **Android smartphones** and **Fossil Gen 4/5 smartwatches** given by researchers. More information about these data can be found in the codebooks. The tables below show the types of sensor data we collected and different formats data are processed and stored in.
+Passive sensing data were collected continuously from user's own **Android smartphones** and **Fossil Gen 4/5 smartwatches** given by researchers. More information about these data can be found in the `codebooks <https://timestudydocumentation.github.io/docs/build/html/data_pipeline.html>`_. The tables below show the types of sensor data we collected and different formats data are processed and stored in.
 
-- Raw log file: the most raw data logged directly from the mobile devices (example file)
+- Raw log file: the most raw data logged directly from the mobile devices (`example file <https://drive.google.com/file/d/1bmJ09AlGorF-nLOtr91SDRG6lCrPB2RR/view?usp=sharing>`_)
 
-- Minute-level file: minute-level aggregation of raw logs (example file)
+- Minute-level file: minute-level aggregation of raw logs (`example file <https://drive.google.com/file/d/1NmL37y-SkQwUdm8fifCNtzWBk43uCgx4/view?usp=drive_link>`_)
 
-- Hour-level file: hour-level aggregation of minute-level file (example file)
+- Hour-level file: hour-level aggregation of minute-level file (`example file <https://drive.google.com/file/d/1ASMnY3nhJ4TbdEyuCyXHW8qrH3rC2zOL/view?usp=drive_link>`_)
 
-- Day-level file: day-level aggregation of hour-level file (example file)
+- Day-level file: day-level aggregation of hour-level file (`example file <https://drive.google.com/file/d/1_1b2pBulG0eWVs8DmHadFpYgXHPu6Xxx/view?usp=sharing>`_)
 
 **Physical activity and location**
 
-All motion summary measurements were computed based on accelerometer data from smartwatches. Location data were collected through Android API on the smartphones.
+All motion summary measurements were computed based on accelerometer data from smartwatches. Location data were collected through `Android Location API <https://developer.android.com/training/location>`_ on the smartphones.
 
-- Watch MIMS (Monitor Independent Movement Summary unit): a type of measurement of motion summary that features harmonizing the processing of accelerometer data from different devices
+- Watch MIMS (Monitor Independent Movement Summary unit): a type of measurement of motion summary that features harmonizing the processing of accelerometer data from different devices (`reference <https://mhealthgroup.github.io/MIMSunit/>`_)
 
 - AUC (area under curve) of watch accelerometer data: a type of measurement of area under the rectified curve of the raw accelerometer signal
 
-- SWaN (v1.0): an algorithm to distinguish between sleep-wear, wake-wear, and non-wear of smartwatch
+- SWaN (sleep-wearwake-wear and nonwear) (v1.0): an algorithm to distinguish between sleep-wear, wake-wear, and non-wear of smartwatch (`reference <https://europepmc.org/article/med/36007161>`_)
 
-- Phone detected activity type: detection of activity and confidence levels using Android Activity Recognition API, including in vehicle, on bike, on foot, running, still, tilting, walking and unknown
+- Phone-detected activity type: detection of activity and confidence levels using Android Activity Recognition API, including in vehicle, on bike, on foot, running, still, tilting, walking and unknown (`reference <https://developers.google.com/location-context/activity-recognition>`_)
 
-- Phone step count: steps of the last hour returned from Android API
+- Phone-detected step count: steps of the last hour returned from Android Motion API (`reference <https://developer.android.com/guide/topics/sensors/sensors_motion>`_)
 
-- Phone location: latitude, longitude returned from Android API
+- Phone-detected location: latitude, longitude returned from Android API (`reference <https://developer.android.com/training/location>`_)
 
-- Semantic labels of phone location clusters: semantic labels collected from self-reported surveys and OpenStreetMap databases on the phone location clusters detected by density-based clustering algorithm
+- Semantic labels of phone location clusters: semantic labels collected from self-reported context-sensitive EMA surveys and OpenStreetMap databases on the phone location clusters detected by a modified density-based clustering algorithm (`reference <https://dl.acm.org/doi/10.5555/3001460.3001507>`_)
 
 .. image:: /images/ps_activity.png
   :width: 600

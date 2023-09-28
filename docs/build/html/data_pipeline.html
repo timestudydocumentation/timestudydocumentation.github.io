@@ -196,29 +196,47 @@
         <article role="main">
           <section id="data-description-and-codebook">
 <h1>Data description and codebook<a class="headerlink" href="#data-description-and-codebook" title="Permalink to this heading">#</a></h1>
-<p>The rich data collected in TIME study are processed and stored at different levels to serve different purposes and researchers with various programming backgrounds. They include data and logs in original form that preserves maximal information, intermediate data that are processed with modest manners to have a cleaner format, pre-processed data that have a refined format and can be directly imported into statistical softwares, and project-specific data that are generated for project-specific purposes. Details about these datasets can be found in their codebooks.</p>
+<p>The rich data collected in TIME study are processed and stored at different levels to serve different purposes and researchers with various programming backgrounds. From raw date collections to more processed datasets, they include:</p>
+<ul class="simple">
+<li><p><strong>Raw data and logs</strong> that are in original form that preserves maximal information;</p></li>
+<li><p><strong>Intermediate data</strong> that are processed to extracts useful information from the raw data and have a cleaner format at the same time;</p></li>
+<li><p><strong>Processed datasets</strong> that include fully cleaned data with summary variables included and may combine cleaned data from different raw and intermediate datasets, being in a refined CSV format that can be directly imported into statistical softwares.</p></li>
+</ul>
+<p>Details about these datasets can be found in their codebooks.</p>
+<hr class="docutils" />
+<p><strong>Data Processing Pipeline</strong></p>
 <img alt="_images/flowcharts.png" src="_images/flowcharts.png" />
-<p><strong>Baseline, 6-month, and 12-month online questionnaires</strong></p>
-<p><em>Description</em>: Sociodemographic variables, mental health characteristics, health status, health behaviors, and other covariates are assessed at three time points (baseline, 6 months, 12 months) using online electronic questionnaires completed remotely on a computer, tablet, or smartphone. The surveys were administered through USC’s REDCap system.</p>
-<p><em>Location</em>: REDCap system</p>
-<p><em>Codebook</em>: <a class="reference external" href="https://docs.google.com/document/d/141SUkhgxjFvOxgMI8WeZ6W0PfGbvQeFm/edit?usp=sharing&amp;ouid=114892255827597694084&amp;rtpof=true&amp;sd=true">Link</a></p>
+<p><strong>Types of Data in Each Dataset</strong></p>
+<a class="reference internal image-reference" href="_images/dataset_table.png"><img alt="_images/dataset_table.png" src="_images/dataset_table.png" style="width: 1200px;" /></a>
+<hr class="docutils" />
 <p><strong>Raw data and logs (recommended for experienced programmer)</strong></p>
 <p><em>Description</em>: all data and logs are encrypted and stored in their raw format after being directly pulled from devices. It contains all kinds of logs including those used for debugging purposes. Most files have data format issues, such as missing headers, duplicate rows, logging errors, etc.</p>
-<p><em>Location</em>: discovery cluster</p>
 <p><em>Codebook</em>: <a class="reference external" href="https://docs.google.com/document/d/1P_EFLPf1ovy7Q1KxJqeJcsvjVorTU3F5/edit?usp=sharing&amp;ouid=114892255827597694084&amp;rtpof=true&amp;sd=true">Link</a></p>
 <p><strong>Intermediate data (recommended for experienced programmer)</strong></p>
 <p><em>Description</em>: data and logs are extracted from the raw data and logs and cleaned to be free of format issues as in raw data format. Every file is stored in csv format with a header. Researchers with strong programming skills can start analysis with data at this stage. See more details about data processing of first, second, and third passes on discovery cluster <a class="reference external" href="https://docs.google.com/presentation/d/16MweNpNtCRuGesIusS8MOqcHZurvukfOXVf_9RZ9iCU/edit?usp=sharing">here</a>.</p>
 <p><em>Location</em>: discovery cluster</p>
 <p><em>Codebook</em>: <a class="reference external" href="https://docs.google.com/document/d/1ICuqKXCl5JkM5RjU1WNQs4hphxWwTz-E/edit?usp=sharing&amp;ouid=114892255827597694084&amp;rtpof=true&amp;sd=true">Link</a></p>
-<p><strong>Daily report</strong></p>
-<p><em>Description</em>: a single csv file that contains an aggregated summary of statistics for each day and participant. Files are at day level for each participant, and stored in /participantID/YYYY-MM-DD/. This file was originally used for compliance check during the study.</p>
-<p><em>Location</em>: discovery cluster</p>
-<p><em>Codebook</em>: <a class="reference external" href="https://docs.google.com/document/d/1LqaMriSpHDn5IUJGW9jtkihuh8c13KEB/edit?usp=sharing&amp;ouid=114892255827597694084&amp;rtpof=true&amp;sd=true">Link</a></p>
-<p><strong>EMA dataset</strong></p>
-<p><em>Description</em>: a single csv file of all prompted EMA surveys and responses, including EMA Measurement Burst Data, EMA Daily Data, and EMA Weekly (i.e., Sunday) Data (with the COVID questionnaire).</p>
-<p><em>Location</em>: discovery cluster</p>
-<p><em>R code and instruction</em>: <a class="reference external" href="https://docs.google.com/document/d/13EoBgT_0VB44rKQFtlAsggnM2fLqUag061D9LTSnE04/edit?usp=sharing">Link</a></p>
-<p><em>Codebook</em>: <a class="reference external" href="https://docs.google.com/document/d/1FWptC9_fXnegkQQ83WY8QS1hdh_tjm9jZjQftkp3qyo/edit?usp=sharing">Link</a></p>
+<p><strong>Processed Data (recommended for researchers without extensive programming experience)</strong></p>
+<p><strong>Baseline, 6-month, and 12-month online questionnaires</strong>: sociodemographic variables, mental health characteristics, health status, health behaviors, and other covariates are assessed at three time points (baseline, 6 months, 12 months) using online electronic questionnaires completed remotely on a computer, tablet, or smartphone. The surveys were administered through USC’s REDCap system.
+<a class="reference external" href="https://docs.google.com/document/d/141SUkhgxjFvOxgMI8WeZ6W0PfGbvQeFm/edit?usp=sharing&amp;ouid=114892255827597694084&amp;rtpof=true&amp;sd=true">Codebook</a></p>
+<p><strong>Daily report (calendar days)</strong>: a single csv file that contains an aggregated summary of statistics for each participant and calendar day. Files are at day level for each participant, and stored in /participantID/YYYY-MM-DD/. This file was originally used for compliance check during the study.
+<a class="reference external" href="https://docs.google.com/document/d/1LqaMriSpHDn5IUJGW9jtkihuh8c13KEB/edit?usp=sharing&amp;ouid=114892255827597694084&amp;rtpof=true&amp;sd=true">Codebook</a>
+<a class="reference external" href="https://drive.google.com/file/d/1Xmt2GymWz7pMny_FQt0r7hNk01RafNoX/view?usp=sharing">Example file</a></p>
+<p><strong>Daily report (personal daybreak days)</strong>: a single csv file that contains an aggregated summary of statistics for each participant and personal daybreak day. The format is similar to the calendar day daily report except the day is defined based on an individual’s wake and sleep time.
+<a class="reference external" href="https://docs.google.com/document/d/1BRfH8hBKEiz-RjLAcKZaZzSLk6ctdCFa/edit?usp=drive_link&amp;ouid=114892255827597694084&amp;rtpof=true&amp;sd=true">Codebook</a>
+<a class="reference external" href="https://drive.google.com/file/d/1EcxzvfHl-nLMK700kG5ztjxxvlqj5WQp/view?usp=drive_link">Example file</a></p>
+<p><strong>EMA survey dataset</strong>: a single csv file of all prompted EMA surveys and responses, including EMA Measurement Burst Data, EMA Daily Data, and EMA Weekly (i.e., Sunday) Data (with the COVID questionnaire).
+<a class="reference external" href="https://docs.google.com/document/d/13EoBgT_0VB44rKQFtlAsggnM2fLqUag061D9LTSnE04/edit?usp=sharing">R code and instruction</a>
+<a class="reference external" href="https://docs.google.com/document/d/1FWptC9_fXnegkQQ83WY8QS1hdh_tjm9jZjQftkp3qyo/edit?usp=sharing">Codebook</a></p>
+<p><strong>EMA prompt dataset</strong>: a single csv file of all EMA prompts and reprompts, including sensor data aggregates that are 30/60/90/120/150/180 minutes before and after the prompt time. No survey responses are included.
+<a class="reference external" href="https://docs.google.com/document/d/12au0rwzOYEJa-ddNEoyKt4c7aNJjx0Dn/edit?usp=drive_link&amp;ouid=114892255827597694084&amp;rtpof=true&amp;sd=true">Codebook</a>
+<a class="reference external" href="https://drive.google.com/file/d/1SM_OpNUFWe6Y1ijn3PcUdfgbUB_Memco/view?usp=drive_link">Example file</a></p>
+<p><strong>Sleep report</strong>: a single csv file of self-reported and watch-detected sleep and wake time of all days in study. The self-reported sleep and wake time include prospective (i.e., estimated time before sleep) and retrospective (i.e., recalled time after sleep) sleep and wake time. Other sleep metrics are included as well.
+<a class="reference external" href="https://docs.google.com/document/d/1ummc3-rSD7wSDlR4whRP7IhsZN6jcW9Y/edit?usp=drive_link&amp;ouid=114892255827597694084&amp;rtpof=true&amp;sd=true">Codebook</a>
+<a class="reference external" href="https://drive.google.com/file/d/1Xmt2GymWz7pMny_FQt0r7hNk01RafNoX/view?usp=sharing">Example file</a></p>
+<p><strong>Dictionary of phone-detected visited places</strong>: a single csv file of meta information about visited places detected from each participant’s smartphones throughout the study. The meta information for each place (location cluster) include semantic labels (from CS-EMA, exit-interview, and OpenStreetMap) and visiting information by the participant (polygon area, time spent, number of visits, etc.).
+<a class="reference external" href="https://docs.google.com/document/d/1ICuqKXCl5JkM5RjU1WNQs4hphxWwTz-E/edit#bookmark=id.euzzwymzmb4w">Codebook</a>
+<a class="reference external" href="https://drive.google.com/file/d/1Vj0nlAQz5rmJOAsauGSRmhl0kk2l6lm0/view?usp=drive_link">Example file</a></p>
 </section>
 
         </article>
