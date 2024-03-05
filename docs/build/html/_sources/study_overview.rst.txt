@@ -6,7 +6,10 @@ The **Temporal Influences on Movement and Exercise (TIME) Study** used mobile an
 
 Participant
 ------------------------
-Participants included N=250 young adults (18-29 years) with personal Android smartphones who engaged in recommended levels of physical activity (PA) (> 150 min/week) or intended to start doing so within the next 12 months.
+Participants included N=250 young adults (18-29 years) with personal Android smartphones who engaged in recommended levels of physical activity (PA) (> 150 min/week) or intended to start doing so within the next 12 months.  
+
+.. image:: /images/consort.jpg
+  :width: 800
 
 Study design
 ------------
