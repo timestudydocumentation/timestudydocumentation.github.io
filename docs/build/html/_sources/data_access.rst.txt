@@ -1,4 +1,4 @@
-How can I access the data and codebooks?
+How to access the data?
 ============================
 
 To get access to TIME study data, you will need to fill up a proposal form for approval. Please follow the guidelines_.
